@@ -1,0 +1,6 @@
+statefulset:
+  imageURL: shivapaturi01/catalogue
+  imageVersion: v1
+hpa:
+  maxReplicas: 10
+  utilisation: 75
