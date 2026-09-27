@@ -1,4 +1,4 @@
-statefulset:
+deployment:
   imageURL: shivapaturi01/catalogue
   imageVersion: v1
 hpa:
