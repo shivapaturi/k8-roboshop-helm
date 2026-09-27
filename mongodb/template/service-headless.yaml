@@ -4,18 +4,16 @@ metadata:
   name: mongodb-headless
   namespace: roboshop
   labels:
-      component: mongodb
-      project: roboshop
-      tier: database
-
+    component: mongodb
+    project: roboshop
+    tier: database
 spec:
   clusterIP: None
   selector:
-      component: mongodb
-      project: roboshop
-      tier: database
-
+    component: mongodb
+    project: roboshop
+    tier: database
   ports:
-    - protocol: TCP
-      port: 27017 # service port
-      targetPort: 27017 # container port
+  - protocol: TCP
+    port: 27017 # service port
+    targetPort: 27017 # container port
